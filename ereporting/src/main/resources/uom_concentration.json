@@ -1,0 +1,236 @@
+{
+  "@context" : {
+    "@base" : "http://dd.eionet.europa.eu/vocabulary/uom/concentration/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "concepts" : "skos:Concept",
+    "prefLabel" : "skos:prefLabel",
+    "broader" : "skos:broader",
+    "narrower" : "skos:narrower",
+    "@language" : "en"
+  },
+  "concepts" : [ {
+    "@id" : "m-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Per meter",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mg.l-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per litre.",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mg.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Miligrams per cubic metre of ambient air",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mg.m-3.day",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per cubic meter times day",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mg.m-3.h",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per cubic meter times hour",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mgN.l-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Milligrams nitrogen per litre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mgN.m-2.m-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Milligrams nitrogen per square meter per month",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mgS.l-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Milligrams sulphur per litre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mgS.m-2.m-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Milligrams sulphur per square meter per month",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mm",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Millimeter",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ng.l-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Nanograms per litre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ng.m-2",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Nanograms per square meter",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ng.m-2.day-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Nanograms per square metre per day",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ng.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Nanograms per cubic metre of ambient air",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "pHunits",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "pH",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "pg.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Picograms per cubic metre of ambient air",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ppbv",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Parts per billion per volume",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ppmv",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Parts per million by volume",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "pptv",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Parts per trillion per volume",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "uS.cm-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micro Siemens per centimeter",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ueH.l-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "micromoles per litre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ug.l-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per litre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ug.m-2.day-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per square metre per day",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ug.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per cubic meter",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ug.m-3.day",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per cubic metre per day",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ug.m-3.h",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms per cubic metre per hour",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ugC.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms of carbon per cubic metre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ugN.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms of nitrogen per cubic metre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ugNO2.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Units of mass concentration of nitrogen dioxide (μg/m3)",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ugS.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms of sulphur per cubic metre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "ugSO2.m-3",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Micrograms of sulphur dioxide per cubic metre",
+      "@language" : "en"
+    } ]
+  }, {
+    "@id" : "mgS.m-1",
+    "@type" : "skos:Concept",
+    "prefLabel" : [ {
+      "@value" : "Milligrams nitrogen per meter",
+      "@language" : "en"
+    } ]
+  } ]
+}

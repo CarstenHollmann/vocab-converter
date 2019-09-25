@@ -1,0 +1,113 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://unitsofmeasure.org/ucum-essence" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root" type="ucum:rootType" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+  <xs:complexType name="valueType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="sup" minOccurs="0"/>
+      <xs:element type="ucum:functionType" name="function" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+    </xs:sequence>
+    <xs:attribute type="xs:float" name="value" use="optional"/>
+    <xs:attribute type="xs:string" name="Unit" use="optional"/>
+    <xs:attribute type="xs:string" name="UNIT" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="prefixType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="printSymbol"/>
+      <xs:element type="ucum:valueType" name="value" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Code" use="optional"/>
+    <xs:attribute type="xs:string" name="CODE" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="base-unitType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="printSymbol"/>
+      <xs:element type="xs:string" name="property"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Code" use="optional"/>
+    <xs:attribute type="xs:string" name="CODE" use="optional"/>
+    <xs:attribute type="xs:string" name="dim" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="unitType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="printSymbol" minOccurs="0">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element type="xs:string" name="sup" minOccurs="0"/>
+            <xs:element name="sub" minOccurs="0">
+              <xs:complexType mixed="true">
+                <xs:sequence>
+                  <xs:element type="xs:string" name="r" minOccurs="0"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="i" minOccurs="0">
+              <xs:complexType mixed="true">
+                <xs:sequence>
+                  <xs:element type="ucum:subType" name="sub" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="xs:string" name="property" minOccurs="0"/>
+      <xs:element type="ucum:valueType" name="value" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Code" use="optional"/>
+    <xs:attribute type="xs:string" name="CODE" use="optional"/>
+    <xs:attribute type="xs:string" name="isMetric" use="optional"/>
+    <xs:attribute type="xs:string" name="class" use="optional"/>
+    <xs:attribute type="xs:string" name="isSpecial" use="optional"/>
+    <xs:attribute type="xs:string" name="isArbitrary" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="functionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+        <xs:attribute type="xs:string" name="Unit" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="printSymbolType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="sup" minOccurs="0"/>
+      <xs:element name="sub" minOccurs="0">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element type="xs:string" name="r" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="i" minOccurs="0">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element type="ucum:subType" name="sub" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="r" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="iType" mixed="true">
+    <xs:sequence>
+      <xs:element type="ucum:subType" name="sub" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rootType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="ucum:prefixType" name="prefix" maxOccurs="unbounded" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+      <xs:element type="ucum:base-unitType" name="base-unit" maxOccurs="unbounded" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+      <xs:element type="ucum:unitType" name="unit" maxOccurs="unbounded" minOccurs="0" xmlns:ucum="http://unitsofmeasure.org/ucum-essence"/>
+    </xs:choice>
+    <xs:attribute type="xs:float" name="version"/>
+    <xs:attribute type="xs:string" name="revision"/>
+    <xs:attribute type="xs:string" name="revision-date"/>
+  </xs:complexType>
+</xs:schema>
