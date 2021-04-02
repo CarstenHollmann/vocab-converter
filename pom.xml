@@ -55,7 +55,7 @@
         <sos.version>5.0.0-SNAPSHOT</sos.version>
         <arctic-sea.version>8.1.0</arctic-sea.version>
         <jackson.version>2.12.1</jackson.version>
-        <version.jena>3.17.0</version.jena>
+        <version.jena>4.0.0</version.jena>
     </properties>
 
     <dependencyManagement>
