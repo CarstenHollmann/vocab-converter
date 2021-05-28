@@ -43,8 +43,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.n52.sensorweb.sos</groupId>
-            <artifactId>api</artifactId>
+            <groupId>org.n52.sensorweb-server.sos</groupId>
+            <artifactId>sos-api</artifactId>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

@@ -52,7 +52,7 @@
 
     <properties>
         <timestamp>${maven.build.timestamp}</timestamp>
-        <sos.version>5.0.0-SNAPSHOT</sos.version>
+        <sos.version>5.3.1</sos.version>
         <jackson.version>2.12.3</jackson.version>
         <arctic-sea.version>8.2.1</arctic-sea.version>
         <version.jena>3.17.0</version.jena>
@@ -86,8 +86,8 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.n52.sensorweb.sos</groupId>
-                <artifactId>api</artifactId>
+                <groupId>org.n52.sensorweb-server.sos</groupId>
+                <artifactId>sos-api</artifactId>
                 <version>${sos.version}</version>
                 <exclusions>
                     <exclusion>
@@ -178,14 +178,10 @@
         <repository>
             <id>osgeo</id>
             <name>Open Source Geospatial Foundation Repository</name>
-            <url>http://download.osgeo.org/webdav/geotools/</url>
+            <url>https://repo.osgeo.org/repository/release/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <id>boundlessgeo-releases</id>
-            <url>https://repo.boundlessgeo.com/main</url>
         </repository>
     </repositories>
     
