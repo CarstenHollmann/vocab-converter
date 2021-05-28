@@ -53,8 +53,8 @@
     <properties>
         <timestamp>${maven.build.timestamp}</timestamp>
         <sos.version>5.0.0-SNAPSHOT</sos.version>
+        <jackson.version>2.12.3</jackson.version>
         <arctic-sea.version>8.2.1</arctic-sea.version>
-        <jackson.version>2.12.1</jackson.version>
         <version.jena>3.17.0</version.jena>
     </properties>
 
